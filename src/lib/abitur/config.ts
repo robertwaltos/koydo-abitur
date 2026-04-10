@@ -1,0 +1,45 @@
+// Abitur Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM112",
+  slug: "abitur",
+  name: "Abitur",
+  fullName: "Abitur",
+  alias: "Abitur",
+  family: "Abitur",
+  category: "School exams",
+  subcategory: "University entrance qualification",
+  country: "Germany",
+  region: "EMEA",
+  languages: ["German"],
+  estimatedAnnualTakers: "large but state-fragmented",
+  testingWindow: "Apr-Jun",
+  schedulePattern: "Annual",
+  ageGroup: "17-19",
+  targetUser: "School student",
+  delivery: "Paper-based + oral",
+  questionTypes: ["Essay","structured response","oral"],
+  adaptivity: "State-specific",
+  sections: "Subject combination",
+  scoringMode: "State grades",
+  essayOrSpeaking: "Yes",
+  ipRisk: "Low",
+  contentReuse: "school_subjects_plus_admissions",
+  uiEngine: "paper_oral_mixed",
+  monetizationPotential: "High",
+  tier: "Tier 4",
+  launchWave: "Wave 6",
+  themeColor: "#D97706",
+  themeColorDark: "#B45309",
+  localizationComplexity: "High",
+  offlineNeeded: false,
+  mobileFirst: false,
+  locale: "de",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
