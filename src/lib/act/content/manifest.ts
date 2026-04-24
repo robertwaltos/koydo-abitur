@@ -20,8 +20,8 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
-  activityTypes: ActivityType[];
+  minQuestionCount: number;
+  requiredActivityTypes: ActivityType[];
 }
 
 export interface ContentManifest {
@@ -44,8 +44,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Deutsch",
     icon: "📖",
     color: "#D97706",
-    questionTarget: 800,
-    activityTypes: ["essay", "reading_passage", "multiple_choice"],
+    minQuestionCount: 800,
+    requiredActivityTypes: ["essay", "reading_passage", "multiple_choice"],
   },
   {
     id: "mathematik",
@@ -53,8 +53,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Mathematik",
     icon: "🔢",
     color: "#1E40AF",
-    questionTarget: 900,
-    activityTypes: ["multiple_choice", "whiteboard", "numeric_input"],
+    minQuestionCount: 900,
+    requiredActivityTypes: ["multiple_choice", "whiteboard", "numeric_input"],
   },
   {
     id: "englisch",
@@ -62,8 +62,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Englisch",
     icon: "🗣️",
     color: "#059669",
-    questionTarget: 700,
-    activityTypes: ["multiple_choice", "essay", "cloze_deletion"],
+    minQuestionCount: 700,
+    requiredActivityTypes: ["multiple_choice", "essay", "cloze_deletion"],
   },
   {
     id: "naturwissenschaften",
@@ -71,8 +71,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Naturwissenschaften",
     icon: "🔬",
     color: "#7C3AED",
-    questionTarget: 800,
-    activityTypes: ["multiple_choice", "calculation"],
+    minQuestionCount: 800,
+    requiredActivityTypes: ["multiple_choice", "calculation"],
   },
   {
     id: "gesellschaft",
@@ -80,8 +80,9 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Geschichte & Gesellschaft",
     icon: "🌍",
     color: "#DC2626",
-    questionTarget: 600,
-    activityTypes: ["essay", "multiple_choice"],
+    minQuestionCount: 600,
+    requiredActivityTypes: ["essay", "multiple_choice"],
   }
   ],
 };
+
